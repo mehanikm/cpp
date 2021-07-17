@@ -22,7 +22,7 @@ int Zad1::div(int a, int b)
     return a / b;
 }
 
-int Zad1::pow(int a, int b)
+int Zad1::kid(int a, int b)
 {
     string sa = to_string(a);
     string sb = to_string(b);

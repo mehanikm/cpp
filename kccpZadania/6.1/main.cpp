@@ -1,5 +1,6 @@
 #include <iostream>
 #include "src/zad1.cpp"
+#include "src/zad2.cpp"
 
 using namespace std;
 
@@ -28,7 +29,7 @@ int ZadKcpp::selectSection()
         Zadanie1();
         break;
     case 2:
-        // Zadanie2();
+        Zadanie2();
         break;
     case 3:
         // Zadanie3();
@@ -56,7 +57,14 @@ void ZadKcpp::Zadanie1()
     cout << "Subtraction: " << z1.sub(a, b) << endl;
     cout << "Multiplication: " << z1.mult(a, b) << endl;
     cout << "Division: " << z1.div(a, b) << endl;
-    cout << "Kiddition: " << z1.pow(a, b) << endl;
+    cout << "Kiddition: " << z1.kid(a, b) << endl;
+}
+
+void ZadKcpp::Zadanie2()
+{
+    Zad2 z2;
+    cout << "Nothing to select here, only one task is present: 2.1" << endl;
+    z2.main();
 }
 
 int main()
