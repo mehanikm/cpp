@@ -2,6 +2,7 @@
 #include "src/zad1.cpp"
 #include "src/zad2.cpp"
 #include "src/zad3.cpp"
+#include "src/zad4.cpp"
 
 using namespace std;
 
@@ -36,7 +37,7 @@ int ZadKcpp::selectSection()
         Zadanie3();
         break;
     case 4:
-        // Zadanie4();
+        Zadanie4();
         break;
     case 5:
         // Zadanie5();
@@ -90,6 +91,42 @@ void ZadKcpp::Zadanie3()
         break;
     case 7:
         z3.task7();
+        break;
+
+    default:
+        cout << "Have a nice day." << endl;
+        break;
+    }
+}
+
+void ZadKcpp::Zadanie4()
+{
+    Zad4 z4;
+    int task;
+    cout << "Select task [0, 1, 2, 3, 4, 5, 6]: ";
+    cin >> task;
+    switch (task)
+    {
+    case 0:
+        z4.task0();
+        break;
+    case 1:
+        z4.task1();
+        break;
+    case 2:
+        z4.task2();
+        break;
+    case 3:
+        z4.task3();
+        break;
+    case 4:
+        z4.task4();
+        break;
+    case 5:
+        z4.task5();
+        break;
+    case 6:
+        z4.task6();
         break;
 
     default:
